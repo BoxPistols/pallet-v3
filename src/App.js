@@ -1,7 +1,19 @@
 import './App.css'
+import { Container, Button } from '@mui/material'
 
-function App() {
-  return <div className="App">Hello World!</div>
+export const App = () => {
+  return (
+    <>
+      <Container
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+        }}
+      >
+        <Button variant="contained">Hello World</Button>
+      </Container>
+    </>
+  )
 }
-
-export default App
